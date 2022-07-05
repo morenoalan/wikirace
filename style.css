@@ -1,0 +1,71 @@
+:root {
+    --flagSquareSize: 10px;
+    --headMenu-height: calc(2 * var(--flagSquareSize));
+    --subHeadMenu-height: 20px;
+    --body-height: 0px;
+}
+html, body {
+    margin: 0; /* Reset default margin on the body element */
+    height: 100%;
+    --body-height: height;
+}
+h1, h2, div, iframe {
+    margin: 0;
+    padding: 0;
+}
+div.headMenu {
+    display: flex;
+    justify-content: center; /*centralize column*/
+    height: var(--headMenu-height);
+    align-content: center;
+    background-color: gray;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'><rect fill='%23000' width='10' height='10' x='0' y='0' /><rect fill='%23000' width='10' height='10' x='10' y='10' /><rect fill='%23fff' width='10' height='10' x='10' y='0' /><rect fill='%23fff' width='10' height='10' x='0' y='10' /></svg>");
+}
+div.headMenuTitle {
+    display: flex;
+    align-items: center; /*centralize row*/
+    background-color: black;
+    height: 100%;
+    width: max-content;
+}
+div#main_screen {
+    background-color: red;
+}
+h1 {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    font-size: 19px;
+    width: max-content;
+    background-color: black;
+    color: white;
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+div.subHeadMenu {
+    display: flex;
+    justify-content: center; /*centralize column*/
+    height: var(--subHeadMenu-height);
+    align-items: center;
+    background-color: white;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'><rect fill='%23000' width='10' height='10' x='0' y='0' /><rect fill='%23000' width='10' height='10' x='10' y='10' /><rect fill='%23fff' width='10' height='10' x='10' y='0' /><rect fill='%23fff' width='10' height='10' x='0' y='10' /></svg>");
+}
+h2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    font-size: 13px;
+    align-content: center;
+    width: max-content;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+iframe {
+    display: block; /* iframes are inline by default */
+    background: #000;
+    border: none; /* Reset default border */
+    width: 100%;
+    --relativeHeight: calc(var(--headMenu-height) + var(--subHeadMenu-height));
+    height: calc(100% - var(--relativeHeight));
+}
