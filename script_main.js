@@ -20,11 +20,6 @@ wiki_list.splice(pick2,1);
 
 console.log(wiki_list.length);
 
-
-
-/*
-console.log(document.getElementById('iframe').clientHeight);
-*/
 var alink = document.getElementsByTagName('a');
 console.log(alink);
 /*

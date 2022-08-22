@@ -2,12 +2,12 @@
     --flagSquareSize: 10px;
     --headMenu-height: calc(2 * var(--flagSquareSize));
     --subHeadMenu-height: 20px;
-    --body-height: 0px;
+    --body-height: 100%;
 }
 html, body {
     margin: 0; /* Reset default margin on the body element */
     height: 100%;
-    --body-height: height;
+    /*--body-height: height;*/
 }
 h1, h2, div, iframe {
     margin: 0;
@@ -30,6 +30,7 @@ div.headMenuTitle {
 }
 div#main_screen {
     background-color: red;
+    visibility: hidden;
 }
 h1 {
     padding-left: 20px;
@@ -64,7 +65,7 @@ h2 {
 iframe {
     display: block; /* iframes are inline by default */
     background: #000;
-    border: none; /* Reset default border */
+    border: none;
     width: 100%;
     --relativeHeight: calc(var(--headMenu-height) + var(--subHeadMenu-height));
     height: calc(100% - var(--relativeHeight));
