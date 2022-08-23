@@ -9,11 +9,12 @@ html, body {
     height: 100%;
     /*--body-height: height;*/
 }
+header, main, footer,
 h1, h2, div, iframe {
     margin: 0;
     padding: 0;
 }
-div.headMenu {
+header {
     display: flex;
     justify-content: center; /*centralize column*/
     height: var(--headMenu-height);
@@ -28,9 +29,8 @@ div.headMenuTitle {
     height: 100%;
     width: max-content;
 }
-div#main_screen {
+#main_screen {
     background-color: red;
-    visibility: hidden;
 }
 h1 {
     padding-left: 20px;
