@@ -9,16 +9,21 @@ html, body {
     height: 100%;
     /*--body-height: height;*/
 }
+header, main, footer,
 h1, h2, div, iframe {
     margin: 0;
     padding: 0;
 }
-div.headMenu {
+ul {
+    list-style: none;
+}
+header {
     display: flex;
+    flex-direction: column;
     justify-content: center; /*centralize column*/
-    height: var(--headMenu-height);
+    height: calc(3 * var(--headMenu-height));
     align-content: center;
-    background-color: gray;
+    background-color: black;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'><rect fill='%23000' width='10' height='10' x='0' y='0' /><rect fill='%23000' width='10' height='10' x='10' y='10' /><rect fill='%23fff' width='10' height='10' x='10' y='0' /><rect fill='%23fff' width='10' height='10' x='0' y='10' /></svg>");
 }
 div.headMenuTitle {
@@ -28,9 +33,8 @@ div.headMenuTitle {
     height: 100%;
     width: max-content;
 }
-div#main_screen {
+#main_screen {
     background-color: red;
-    visibility: hidden;
 }
 h1 {
     padding-left: 20px;
