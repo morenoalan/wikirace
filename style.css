@@ -5,12 +5,10 @@
     --body-height: 100%;
 }
 html, body {
-    margin: 0; /* Reset default margin on the body element */
+    margin: 0; 
     height: 100%;
-    /*--body-height: height;*/
 }
-header, main, footer,
-h1, h2, div, iframe {
+* {
     margin: 0;
     padding: 0;
 }
@@ -20,21 +18,25 @@ ul {
 header {
     display: flex;
     flex-direction: column;
-    justify-content: center; /*centralize column*/
+    justify-content: center;
+    align-items: center;
     height: calc(3 * var(--headMenu-height));
     align-content: center;
     background-color: black;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'><rect fill='%23000' width='10' height='10' x='0' y='0' /><rect fill='%23000' width='10' height='10' x='10' y='10' /><rect fill='%23fff' width='10' height='10' x='10' y='0' /><rect fill='%23fff' width='10' height='10' x='0' y='10' /></svg>");
 }
-div.headMenuTitle {
+.headMenuTitle {
     display: flex;
-    align-items: center; /*centralize row*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: black;
     height: 100%;
     width: max-content;
 }
-#main_screen {
+#footer {
     background-color: red;
+    width: 100%;
 }
 h1 {
     padding-left: 20px;
@@ -46,14 +48,14 @@ h1 {
     color: white;
     font-family: 'Oleo Script Swash Caps', cursive;
 }
-div.subHeadMenu {
+/*.subHeadMenu {
     display: flex;
-    justify-content: center; /*centralize column*/
+    justify-content: center;
     height: var(--subHeadMenu-height);
     align-items: center;
-    background-color: white;
+    background-color: black;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'><rect fill='%23000' width='10' height='10' x='0' y='0' /><rect fill='%23000' width='10' height='10' x='10' y='10' /><rect fill='%23fff' width='10' height='10' x='10' y='0' /><rect fill='%23fff' width='10' height='10' x='0' y='10' /></svg>");
-}
+}*/
 h2 {
     padding-left: 20px;
     padding-right: 20px;
@@ -66,11 +68,25 @@ h2 {
     font-family: 'Roboto', sans-serif;
     height: 100%;
 }
+.main-footer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    height: calc(100% - 40px);
+    width: 100%;
+}
 iframe {
-    display: block; /* iframes are inline by default */
+    display: flex;
     background: #000;
     border: none;
     width: 100%;
+    height:100%;
+    /*
     --relativeHeight: calc(var(--headMenu-height) + var(--subHeadMenu-height));
-    height: calc(100% - var(--relativeHeight));
+    height: calc(100% - var(--relativeHeight));*/
 }
