@@ -76,6 +76,9 @@ h2 {
     justify-content: center;
     align-items: center;
 }
+.footer {
+    margin-top: auto;
+}
 main {
     height: calc(100% - 40px);
     width: 100%;
