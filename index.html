@@ -3,33 +3,31 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Wiki Race</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true" />
         <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700" rel="stylesheet" />
-
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400" rel="stylesheet" />
-        
-        <link rel="wikirace-favicon" href="data:image/svg+xml,<svg/xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏁</text></svg>" />
+
+        <link rel='shortcut icon' alt="wikirace-favicon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0IiBoZWlnaHQ9IjE0NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBzdHlsZT0iZmlsbDojMDAwO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDoxLjg4OTc2IiBkPSJNNzIgNzJoNzJ2NzJINzJ6TTAgMGg3MnY3MkgweiIvPjxwYXRoIHN0eWxlPSJmaWxsOiNmZmY7c3Ryb2tlOm5vbmU7c3Ryb2tlLXdpZHRoOjEuODg5NzYiIGQ9Ik03MiAwaDcydjcySDcyek0wIDcyaDcydjcySDB6Ii8+PC9zdmc+">
+        <title>WikiRace</title>
 
         <link rel="stylesheet" type="text/css" href="style.css" />
     </head>
     <body>
-        <noscript>
-            <br />
-            You need to enable JavaScript to run this app.<br />
-            Você precisa ativar o JavaScript para executar esta aplicação.<br />
-            <br />
-            <br />
-        </noscript>
-
-        <div class="headMenu">
-            <div class="headMenuTitle"><h1>Wiki Race</h1></div>
+        <header class="headMenu">
+            <h1 class="headMenuTitle">Wiki Race</h1>
+            <h2 id="mission" class="subHeadMenu"></h2>
+        </header>
+        <div class='main-footer'>
+            <main>
+                <iframe id="iframe" src="https://www.wikipedia.org"></iframe>
+            </main>
+            <footer id="footer" class='footer'>test</footer>
         </div>
-        <div class="subHeadMenu"><h2 id="mission"></h2></div>
-
-        <iframe id="iframe" src="https://www.wikipedia.org"></iframe>
-        <div id="main_screen">test</div>
+        <noscript>
+            Você precisa ativar o JavaScript para executar esta aplicação.<br/>
+            You need to enable JavaScript to run this app.
+        </noscript>
 
         <script type="text/javascript" id='script_wiki_list' src="script_wiki_list.js"></script>
         <script type="text/javascript" id='script_main' src="script_main.js"></script>
