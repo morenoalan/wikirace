@@ -2,17 +2,13 @@
     --flagSquareSize: 10px;
     --headMenu-height: calc(2 * var(--flagSquareSize));
     --subHeadMenu-height: 20px;
-    --body-height: 100%;
 }
 
 html, body {
     margin: 0;
     height: 100%;
-}
-
-* {
-    margin: 0;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -58,16 +54,13 @@ h2 {
     height: 100%;
 }
 
-.main-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-main {
+.main-content {
     flex-grow: 1;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
 }
 
 iframe {
@@ -79,4 +72,6 @@ iframe {
 #footer {
     background-color: red;
     width: 100%;
+    text-align: center;
+    padding: 10px 0;
 }
